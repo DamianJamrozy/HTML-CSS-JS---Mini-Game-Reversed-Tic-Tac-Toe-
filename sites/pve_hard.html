@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title> Kółko & Krzyżyk - Damian Jamroży </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Strona ta jest poświęcona projektowi z przedmiotu Sztuczna inteligencjia i opiera się na grze w kółko i krzyżyk w wersji odwrotnej. Trzy kółka lub krzyżyki w pionie, poziomie lub ukosie przegrywają. Autorem projektu jest Damian Jamroży.">
+	<meta name="keywords" content="kółko, krzyżyk, projekt, SI, Sztuczna Inteligencja, gra, javascript, js, html, css, Damian Jamroży, project, projekt, zaliczeniowy">
+	<meta name="author" content="Damian Jamroży" >
+	<meta name="copyright" content="Damian Jamroży" >
+	<meta name="robots" content="follow">
+	<!-- <link rel="shortcut icon" href="img/icon.png"> -->
+	<link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+	<div class="container">
+		<a href="../Index.html" class="back"><div class="home">Wróć</div></a>
+		<div class="contentv1" id="select_box">
+			<div class="content" style="height:40%; width:95%; margin-left:0;">
+				<h1>Twoje szanse na wygraną są niskie,<br> a strona gry dobierana jest losowo.<br><br> Czy jesteś pewien/a, że chcesz zagrać w trybie trudnym?:</h1>
+			</div>
+			<a href="#" id="yes"><div class="options" style="width:95%; margin-left:0; height:19%;">	
+				<center>Tak</center>
+			</div></a>
+			<a href="pve.html" id="no"><div class="options" style="width:95%; margin-left:0; height:19%;">	
+				<center>Nie</center>
+			</div></a>
+		</div>
+		
+		<div class="content" id="game_box" style="display:none;">
+			<center>
+			<a href="#"><div id="a1" class="holder"></div></a>	<a href="#"><div id="a2" class="holder"></div></a>	<a href="#"><div id="a3" class="holder"></div></a>
+			<a href="#"><div id="b1" class="holder"></div></a>	<a href="#"><div id="b2" class="holder"></div></a>	<a href="#"><div id="b3" class="holder"></div></a>
+			<a href="#"><div id="c1" class="holder"></div></a>	<a href="#"><div id="c2" class="holder"></div></a>	<a href="#"><div id="c3" class="holder"></div></a>
+			<input type="button" value="Zagraj ponownie" class="btn" onclick="new_game()">
+			</center>
+		</div>
+		
+		
+	</div>
+	<div class="foter">
+		<center> Game designed by Damian Jamroży. All rights reserved. </center>
+	</div>
+</body>
+<script src="../js/script_pve_hard.js"></script> 
+</html>
